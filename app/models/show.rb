@@ -7,7 +7,7 @@ class Show < ActiveRecord::Base
     actors_full_name = []
 
     self.actors.each do |actor|
-      full_n = actor.first_name + ' ' actor.last_name
+      full_n = actor.first_name + ' ' + actor.last_name
       actors_full_name << full_n
     end
     actors_full_name
